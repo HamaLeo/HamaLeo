@@ -65,10 +65,22 @@ const titles = {
   '60-fern': '🌿 سەرخس',
   '61-lightning': '⚡ برووسکە',
   '62-tunnel': '🌀 تونێل',
+  '63-bubbles': '🎮 بووڵەکان (یاری)',
+  '64-lightsout': '🎮 چرا بکوژێنەوە (یاری)',
+  '65-hanoi': '🎮 تاوەری هانۆی (یاری)',
+  '66-hexgrid': '⬡ تۆڕی شەشگۆشە',
+  '67-aurora': '🌌 ڕووناکی باکوور',
+  '68-pendulums': '🎐 شەپۆلی پێندۆلەکان',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '63-bubbles': { group: 'game', desc: 'بووڵەکان بپەڕێنە و کۆمبۆ دروست بکە.', hint: 'کلیک', thumb: 100 },
+  '64-lightsout': { group: 'game', desc: 'هەموو چراکان بکوژێنەوە.', hint: 'کلیک', thumb: 3 },
+  '65-hanoi': { group: 'game', desc: 'قوپەکان بگوازەرەوە بۆ تیرەی ڕاست.', hint: 'کلیک', thumb: 3 },
+  '66-hexgrid': { group: 'art', desc: 'شەپۆلی ڕەنگ بە سەر شەشگۆشەکان.', hint: 'ماوس', thumb: 40 },
+  '67-aurora': { group: 'art', desc: 'ئاسمانی باکوور و دەریاچە.', hint: '', thumb: 60 },
+  '68-pendulums': { group: 'art', desc: '١٥ پێندۆلی شەپۆلی.', hint: '', thumb: 60 },
   '57-archery': { group: 'game', desc: 'ئامانج بگرە، هێز بدە و بەریبدە.', hint: 'ماوس', thumb: 3 },
   '58-sokoban': { group: 'game', desc: 'سندووقەکان بۆ جێگەکانیان پاڵ بنێ.', hint: 'تیرەکان / R', thumb: 3 },
   '59-minesweeper': { group: 'game', desc: 'مینەکان بدۆزەوە بێ ئەوەی بتەقێن.', hint: 'کلیک / F', thumb: 3 },

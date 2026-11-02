@@ -59,10 +59,22 @@ const titles = {
   '54-dna': '🧬 DNA',
   '55-sunflower': '🌻 گوڵی خۆرەتاو',
   '56-rain': '🌧 باران',
+  '57-archery': '🎮 تیرهاوێژی (یاری)',
+  '58-sokoban': '🎮 سندووقەکان (یاری)',
+  '59-minesweeper': '🎮 مین‌ڕووت (یاری)',
+  '60-fern': '🌿 سەرخس',
+  '61-lightning': '⚡ برووسکە',
+  '62-tunnel': '🌀 تونێل',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '57-archery': { group: 'game', desc: 'ئامانج بگرە، هێز بدە و بەریبدە.', hint: 'ماوس', thumb: 3 },
+  '58-sokoban': { group: 'game', desc: 'سندووقەکان بۆ جێگەکانیان پاڵ بنێ.', hint: 'تیرەکان / R', thumb: 3 },
+  '59-minesweeper': { group: 'game', desc: 'مینەکان بدۆزەوە بێ ئەوەی بتەقێن.', hint: 'کلیک / F', thumb: 3 },
+  '60-fern': { group: 'art', desc: 'فراکتاڵی سەرخس بە ٨٠٠٠ خاڵ.', hint: '', thumb: 1 },
+  '61-lightning': { group: 'art', desc: 'برووسکە بەرەو کلیکەکەت.', hint: 'کلیک', thumb: 40 },
+  '62-tunnel': { group: 'art', desc: 'تونێلی چوارگۆشە.', hint: 'ماوس', thumb: 30 },
   '51-pacman': { group: 'game', desc: 'خاڵەکان بخۆ و لە ڕۆحەکان ڕابکە.', hint: 'تیرەکان', thumb: 30 },
   '52-doodle': { group: 'game', desc: 'بەرەو ئاسمان باز بدە!', hint: '← → / ماوس', thumb: 40 },
   '53-connect4': { group: 'game', desc: 'چوار بە دووی یەک دژی کۆمپیوتەر.', hint: 'کلیک', thumb: 3 },

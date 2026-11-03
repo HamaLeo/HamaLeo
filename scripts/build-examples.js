@@ -83,10 +83,22 @@ const titles = {
   '78-kaleidoscope': '🔮 کالیدۆسکۆپ',
   '79-warp': '🚀 باز بۆ ئەستێرەکان',
   '80-dotwave': '⚪ شەپۆلی خاڵ',
+  '81-dodge': '🎮 ڕاکردن لە تۆپەکان (یاری)',
+  '82-birds': '🎮 باڵندە توڕەکان (یاری)',
+  '83-pong2': '🎮 پۆنگی دوو کەس (یاری)',
+  '84-mosaic': '🟦 مۆزایک',
+  '85-binaryclock': '🔢 کاتژمێری دووانی',
+  '86-koch': '❄ دەنکە بەفری کۆخ',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '81-dodge': { group: 'game', desc: 'تا دەتوانیت لە تۆپە سوورەکان ڕابکە.', hint: 'ماوس', thumb: 200 },
+  '82-birds': { group: 'game', desc: 'باڵندەکە ڕابکێشە و بەرازەکان بکەوێنە.', hint: 'ماوس', thumb: 3 },
+  '83-pong2': { group: 'game', desc: 'پۆنگی دوو کەسی لەسەر یەک کیبۆرد.', hint: 'W/S و ↑/↓', thumb: 40 },
+  '84-mosaic': { group: 'art', desc: 'تایلی ڕەنگاوڕەنگی گۆڕاو.', hint: 'کلیک', thumb: 20 },
+  '85-binaryclock': { group: 'art', desc: 'کاتژمێر بە لامپی دووانی.', hint: '', thumb: 2 },
+  '86-koch': { group: 'art', desc: 'دەنکە بەفری کۆخ بە Recursion.', hint: '', thumb: 1 },
   '75-fish': { group: 'game', desc: 'بخۆ و گەورە ببە، لە ماسی گەورە ڕابکە.', hint: 'ماوس', thumb: 100 },
   '76-rhythm': { group: 'game', desc: 'نۆتەکان لە کاتی ڕاستدا بگرە.', hint: 'D F J K / کلیک', thumb: 120 },
   '77-towers': { group: 'game', desc: 'تاوەر دابنێ و قەڵاکەت بپارێزە.', hint: 'کلیک', thumb: 3 },

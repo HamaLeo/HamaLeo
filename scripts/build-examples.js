@@ -71,10 +71,22 @@ const titles = {
   '66-hexgrid': '⬡ تۆڕی شەشگۆشە',
   '67-aurora': '🌌 ڕووناکی باکوور',
   '68-pendulums': '🎐 شەپۆلی پێندۆلەکان',
+  '69-invaders': '🎮 داگیرکەرانی ئاسمان (یاری)',
+  '70-golf': '🎮 گۆڵف (یاری)',
+  '71-reaction': '🎮 خێرایی کاردانەوە (یاری)',
+  '72-gears': '⚙ ددانەدار',
+  '73-moire': '🔘 مواریە',
+  '74-fireflies': '✨ کرمە شەوتاو',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '69-invaders': { group: 'game', desc: 'ڕیزی ئەلیانەکان بتەقێنە پێش گەیشتنیان.', hint: '← → و بۆشایی', thumb: 40 },
+  '70-golf': { group: 'game', desc: 'تۆپ بکێشە و بیخەرە کونەکەوە (٣ قۆناغ).', hint: 'ماوس', thumb: 3 },
+  '71-reaction': { group: 'game', desc: 'کاردانەوەی خۆت بپێوە.', hint: 'کلیک', thumb: 3 },
+  '72-gears': { group: 'art', desc: 'چەرخی ددانەدار.', hint: '', thumb: 20 },
+  '73-moire': { group: 'art', desc: 'دوو تۆڕی بازنە.', hint: 'ماوس', thumb: 60 },
+  '74-fireflies': { group: 'art', desc: 'کرمی شەوتاو لە شەودا.', hint: 'ماوس', thumb: 60 },
   '63-bubbles': { group: 'game', desc: 'بووڵەکان بپەڕێنە و کۆمبۆ دروست بکە.', hint: 'کلیک', thumb: 100 },
   '64-lightsout': { group: 'game', desc: 'هەموو چراکان بکوژێنەوە.', hint: 'کلیک', thumb: 3 },
   '65-hanoi': { group: 'game', desc: 'قوپەکان بگوازەرەوە بۆ تیرەی ڕاست.', hint: 'کلیک', thumb: 3 },

@@ -77,10 +77,22 @@ const titles = {
   '72-gears': '⚙ ددانەدار',
   '73-moire': '🔘 مواریە',
   '74-fireflies': '✨ کرمە شەوتاو',
+  '75-fish': '🎮 ماسی گەورە (یاری)',
+  '76-rhythm': '🎮 ڕیتم (یاری)',
+  '77-towers': '🎮 پاراستنی قەڵا (یاری)',
+  '78-kaleidoscope': '🔮 کالیدۆسکۆپ',
+  '79-warp': '🚀 باز بۆ ئەستێرەکان',
+  '80-dotwave': '⚪ شەپۆلی خاڵ',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '75-fish': { group: 'game', desc: 'بخۆ و گەورە ببە، لە ماسی گەورە ڕابکە.', hint: 'ماوس', thumb: 100 },
+  '76-rhythm': { group: 'game', desc: 'نۆتەکان لە کاتی ڕاستدا بگرە.', hint: 'D F J K / کلیک', thumb: 120 },
+  '77-towers': { group: 'game', desc: 'تاوەر دابنێ و قەڵاکەت بپارێزە.', hint: 'کلیک', thumb: 3 },
+  '78-kaleidoscope': { group: 'art', desc: 'نەخشی ٨ لایەنە بە ماوس.', hint: 'ماوس', thumb: 150 },
+  '79-warp': { group: 'art', desc: 'فڕین بەناو ئەستێرەکاندا.', hint: 'ماوس / کلیک', thumb: 20 },
+  '80-dotwave': { group: 'art', desc: 'شەپۆلی خاڵی ڕەنگاوڕەنگ.', hint: 'ماوس', thumb: 40 },
   '69-invaders': { group: 'game', desc: 'ڕیزی ئەلیانەکان بتەقێنە پێش گەیشتنیان.', hint: '← → و بۆشایی', thumb: 40 },
   '70-golf': { group: 'game', desc: 'تۆپ بکێشە و بیخەرە کونەکەوە (٣ قۆناغ).', hint: 'ماوس', thumb: 3 },
   '71-reaction': { group: 'game', desc: 'کاردانەوەی خۆت بپێوە.', hint: 'کلیک', thumb: 3 },

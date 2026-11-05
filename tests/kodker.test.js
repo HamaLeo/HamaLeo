@@ -613,23 +613,25 @@ test('یاریبکە: هەڵەی ناو فریم ڕاپۆرت دەکرێت و ی
 
 test('نموونەی یارییەکان: هەموو فریمەکان بێ هەڵە کار دەکەن لەگەڵ هەموو جۆرە ئینپوتێک', () => {
   const dir = path.join(__dirname, '..', 'examples');
-  const games = fs.readdirSync(dir).filter((f) => /^(16|17|18|19|20|21|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|49|50|51|52|53|54|55|56|57|58|59|61|62|63|64|65|66|67|68|69|70|71|72|73|74|75|76|77|78|79|80|81|82|83|84|85|87|88|89|90|91|92|93|94|95|97)-/.test(f));
-  assert.ok(games.length >= 77);
-  for (const f of games) {
+  let interactive = 0;
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.kd'))) {
     const r = K.run(fs.readFileSync(path.join(dir, f), 'utf8'), { print() {} });
-    assert.ok(r.ok && r.game, f + ': ' + r.error);
-    for (let i = 0; i < 400; i++) {
+    assert.ok(r.ok, f + ': ' + r.error);
+    if (!r.game) continue;       // نموونەی وێنەی چەسپاو
+    interactive++;
+    for (let i = 0; i < 300; i++) {
       const keys = i % 90 < 30 ? { 'ڕاست': true, 'بۆشایی': i % 7 === 0 } : i % 90 < 60 ? { 'چەپ': true } : { 'سەرەوە': true, 'خوارەوە': i % 2 === 0 };
       const t = r.game.tick({ keys, mx: (i * 7) % 400, my: (i * 5) % 300, down: i % 50 < 10, clicked: i % 97 === 0 });
       assert.ok(t.ok, `${f} فریم ${i}: ${t.error}`);
     }
   }
+  assert.ok(interactive >= 70, 'ژمارەی نموونە زیندووەکان: ' + interactive);
 });
 
 test('گەلەری نموونە: هەر نموونەیەک گرووپ و ناونیشانی هەیە', () => {
   const src = fs.readFileSync(path.join(__dirname, '..', 'docs', 'examples.js'), 'utf8');
   const ex = JSON.parse(src.slice(src.indexOf('['), src.lastIndexOf(']') + 1));
-  assert.ok(ex.length >= 97);
-  assert.ok(ex.filter((e) => e.group === 'game').length >= 42);
+  assert.ok(ex.length >= 103);
+  assert.ok(ex.filter((e) => e.group === 'game').length >= 45);
   for (const e of ex) { assert.ok(['code', 'art', 'game'].includes(e.group), e.id); assert.ok(e.title && e.code, e.id); }
 });

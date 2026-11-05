@@ -100,10 +100,22 @@ const titles = {
   '95-radar': '📡 ڕادار',
   '96-carpet': '⬛ مەفرەشی سێرپینسکی',
   '97-orbits': '⚛ ئەتۆم',
+  '98-nim': '🎮 نیم (یاری)',
+  '99-gravityflip': '🎮 وەرگێڕانی کێشکردن (یاری)',
+  '100-lasers': '🎮 لەیزەرەکان (یاری)',
+  '101-cube3d': '🧊 مکعبی سێ ڕەهەندی',
+  '102-sunrise': '🌅 بەرەبەیان',
+  '103-sphere': '🌐 گۆی ٣D',
 };
 
 // گرووپ: code | art | game  — و وەسف و کۆنترۆڵ بۆ گەلەری سەرەکی
 const meta = {
+  '98-nim': { group: 'game', desc: 'یاریی چێوەکان دژی کۆمپیوتەر.', hint: 'کلیک', thumb: 3 },
+  '99-gravityflip': { group: 'game', desc: 'کێشکردن بگۆڕە و لە درکەکان ڕابکە.', hint: 'بۆشایی / کلیک', thumb: 30 },
+  '100-lasers': { group: 'game', desc: 'لە ستوونی لەیزەر دەربچۆ.', hint: '← →', thumb: 40 },
+  '101-cube3d': { group: 'art', desc: 'مکعبی ٣D بە پێرسپێکتیڤ.', hint: 'ماوس', thumb: 30 },
+  '102-sunrise': { group: 'art', desc: 'خۆر هەڵدێت.', hint: 'کلیک', thumb: 200 },
+  '103-sphere': { group: 'art', desc: 'گۆی ٣٠٠ نوختەیی.', hint: 'ماوس', thumb: 20 },
   '92-fruit': { group: 'game', desc: 'بە ماوس میوەکان ببڕە، بۆمبەکان مەبڕە.', hint: 'ماوس', thumb: 80 },
   '93-hockey': { group: 'game', desc: 'هۆکی ئاسمانی دژی کۆمپیوتەر.', hint: 'ماوس', thumb: 30 },
   '94-cave': { group: 'game', desc: 'بە هێلیکۆپتەر بەناو ئەشکەوتدا بفڕە.', hint: 'ماوس / بۆشایی', thumb: 40 },
